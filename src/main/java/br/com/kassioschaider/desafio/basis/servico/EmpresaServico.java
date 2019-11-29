@@ -11,4 +11,6 @@ public interface EmpresaServico {
     Iterable<Empresa> obterTodos();
 
     Optional<Empresa> obterEmpresaPorId(Long id);
+
+    void excluirEmpresaPorId(Long id);
 }

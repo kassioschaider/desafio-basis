@@ -32,4 +32,14 @@ public class FuncionarioServicoImpl implements FuncionarioServico {
     public Optional<Funcionario> obterFuncionarioPorId(Long id) {
         return repositorio.findById(id);
     }
+
+    @Override
+    public void excluirFuncionarioPorId(Long id) {
+        repositorio.deleteById(id);
+    }
+
+    @Override
+    public Funcionario alterarFuncionarioPorId(Long id) {
+        return null;
+    }
 }

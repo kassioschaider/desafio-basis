@@ -16,4 +16,15 @@ public class FuncionarioDTO {
     private String dataDeNascimento;
     private String cpf;
     private Long idEmpresa;
+
+    @Override
+    public String toString() {
+        return "FuncionarioDTO{" +
+                "id=" + id +
+                ", nome='" + nome + '\'' +
+                ", dataDeNascimento='" + dataDeNascimento + '\'' +
+                ", cpf='" + cpf + '\'' +
+                ", idEmpresa=" + idEmpresa +
+                '}';
+    }
 }

@@ -11,4 +11,8 @@ public interface FuncionarioServico {
     Iterable<Funcionario> obterTodos();
 
     Optional<Funcionario> obterFuncionarioPorId(Long id);
+
+    void excluirFuncionarioPorId(Long id);
+
+    Funcionario alterarFuncionarioPorId(Long id);
 }

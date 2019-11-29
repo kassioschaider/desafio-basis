@@ -16,7 +16,6 @@ public class EmpresaServicoImpl implements EmpresaServico {
 
     @Override
     public Empresa salvar(Empresa e) {
-
         repositorio.save(e);
         return null;
     }
@@ -31,5 +30,9 @@ public class EmpresaServicoImpl implements EmpresaServico {
     public Optional<Empresa> obterEmpresaPorId(Long id) {
         return repositorio.findById(id);
     }
-}
 
+    @Override
+    public void excluirEmpresaPorId(Long id) {
+        repositorio.deleteById(id);
+    }
+}
